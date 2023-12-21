@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>DetailStudent</title>
+</head>
+<body>
+<h3>View Employee</h3>
+<p>
+    <a th:href="@{/employee}">
+        Back to form
+    </a>
+</p>
+
+<div id="detail">
+    <div class="cus-detail">
+        <label>Id:</label>
+        <label th:text="${employee.id}"></label>
+    </div>
+    <div class="cus-detail">
+        <label>Name:</label>
+        <label th:text="${employee.name}"></label>
+    </div>
+    <div class="cus-detail">
+        <label>Contact Number:</label>
+        <label th:text="${employee.contactNumber}"></label>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>
